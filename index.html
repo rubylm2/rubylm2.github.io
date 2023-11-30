@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS578-Week 9 Assignment</title>
+
+    <!-- Add a style tag to include CSS within the HTML file -->
+    <style>
+        /* Define styles for the columns */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            flex: 1;
+            padding: 10px;
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <!-- First column -->
+        <div class="column">
+            <h1>IS578 - HTML Assignmnet</h1>
+            <p>This is my first HTML page created with Visual Studio Code.</p>
+        </div>
+
+        <!-- Second column -->
+        <div class="column">
+            <h2>Introduction of Storymap</h2>
+            <p>Storymap of iPRES Conferences</p>
+        </div>
+    </div>
+
+    <!-- Embedding the iframe -->
+    <iframe src="https://uploads.knightlab.com/storymapjs/c2a0001ddbe340e8648de5f326c847e0/map-of-ipres-conferences/index.html" frameborder="0" width="100%" height="800"></iframe>
+
+</body>
+</html>
